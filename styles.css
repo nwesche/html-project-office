@@ -1,0 +1,119 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #B4B4B8, #C7C8CC, #E3E1D9 #F2EFE5); /* Geänderte Hintergrundfarbe */
+    color: #333;
+}
+
+body:first-of-type p {
+    color: black; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slideshow-wrapper {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+}
+
+.mySlides {
+    text-align: center;
+}
+
+.mySlides img {
+    width: 65% !important; /* Ändere die Breite der Bilder auf 65% */
+    height: auto; /* Behalte das Seitenverhältnis bei */
+}
+
+/* Navigationselemente */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+    padding: 16px 20px;
+}
+
+/* Header */
+header {
+    font-family: Arial, sans-serif;
+    background-color: #B4B4B8; 
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: auto; 
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Abschluss */
+section, #kontakt, #öffnungszeiten {
+    padding: 20px; 
+    background-color: C7C8CC; 
+}
+
+section h2, #öffnungszeiten h1 {
+    color: black; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #B4B4B8;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
